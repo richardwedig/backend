@@ -23,7 +23,19 @@ everything you delete goes to the **Recycle Bin** and can be restored
 | **Help** | Step-by-step answers in plain words. |
 | **Ask the Helper** | An AI assistant (Claude) that can explain how to use the site, open pages for you, log hours, find files, read attached Word/Excel files, make spreadsheets, write custom reports and file them. If you don't say where something should be saved, it asks you first. |
 
-## Running it
+## Online version (claude.ai)
+
+The website also runs as a private claude.ai page, with nothing to install:
+**https://claude.ai/artifact/DEMcDUvu3jqeJxnUFFSYFX**
+
+It has the same pages. Your work is saved with the page on your Claude
+account, files are stored with it, and the Helper uses your own Claude account
+(no API key needed). Only you can open it unless you share it from the page's
+Share menu. Its source is in `artifact/` and reuses the website's pages; the
+part that saves your work lives in `artifact/src/local/`. Rebuild it with
+`npm run build:artifact`, which writes `artifact/dist/work-tracker.html`.
+
+## Running it on your own computer
 
 You need [Node.js](https://nodejs.org) version 22.9 or newer.
 
