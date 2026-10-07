@@ -1,0 +1,31 @@
+{
+  "name": "work-tracker",
+  "version": "1.0.0",
+  "description": "Track hours, projects, spreadsheets, files and calendar, with a built-in AI helper.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardwedig/backend.git"
+  },
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/richardwedig/backend/issues"
+  },
+  "homepage": "https://github.com/richardwedig/backend#readme",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "docx": "^9.9.0",
+    "exceljs": "^4.4.0",
+    "express": "^5.2.1",
+    "mammoth": "^1.13.0",
+    "multer": "^2.4.0"
+  },
+  "engines": {
+    "node": ">=22.9"
+  },
+  "private": true
+}
